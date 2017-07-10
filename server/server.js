@@ -4,7 +4,7 @@ const hbs = require("hbs");
 const timestamp = require("unix-timestamp");
 const strftime = require("strftime");
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 var monthWords = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var monthValues = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
